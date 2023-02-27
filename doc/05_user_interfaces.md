@@ -25,4 +25,4 @@ Viewpoint is a graphical interface for submitting and managing jobs in a similar
  
 ### Galaxy
 
-.. mdinclude:: ./includes/galaxy.md
+.. include:: ./includes/galaxy.md
