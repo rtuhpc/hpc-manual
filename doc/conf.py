@@ -33,6 +33,7 @@ sys.path.insert(0, os.path.abspath('../source'))
 # ones.
 #extensions = ['sphinx.ext.autodoc']
 extensions = ['myst_parser','sphinx_copybutton']
+myst_enable_extensions = ['attrs_inline']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
