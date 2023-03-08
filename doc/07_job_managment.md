@@ -39,11 +39,11 @@ qsub –N my_job –q fast –l walltime=00:00:30 test.sh
 You can add requirements at the beginning of the job script:
 ```
 #!/bin/bash
-#PBS -N my_job  # Job name
+#PBS -N my_job             # Job name
 #PBS -l walltime=00:00:30  # Expected job maximum duration
-#PBS -l nodes=1:ppn=1  # Computing resources needed
-#PBS -q fast  # Queue
-#PBS -j oe  # Combine standard output and error in the same file
+#PBS -l nodes=1:ppn=1      # Computing resources needed
+#PBS -q fast               # Queue
+#PBS -j oe                 # Combine standard output and error in the same file
 ```
 The requirements can be entered in either the command line or the script, but highest priority is given to the requirements in the command line in case they repeat.
 
@@ -251,6 +251,6 @@ Multiple I/O-intensive user jobs or parallel processes on the same computing nod
 
 ## Transition between Commands Torque/Pbs Pro and Slurm
 Cheat sheet for those who have previously used the SLURM task management system (source: [https://openhpc.community/](https://openhpc.community)).
-![large scratch](images/torque_slurm.png){width=100px scale=80 align=center}
+![large scratch](images/torque_slurm.png){width=1000px scale=80 align=center}
 
 ---
