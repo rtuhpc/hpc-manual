@@ -9,7 +9,7 @@ The job management system used in RTU cluster is Torque/Moab. Torque is a basic 
 
 ---
 
-## Queuing a Job
+## Queuing/Running a Job
 Before a job gets to a computing node and starts to execute, it is placed in a virtual queue. The queue organises resource allocation in a multi-user system where the number of jobs and their requirements may exceed the number of available resources (CPU, memory). When resources become available, usually the job waiting in the queue longer will be executed next. Users do not have to monitor the resource availability, job movement in the queue and execution is automatic. If there is no waiting jobs in a queue (meaning that the resources are available), then the job is started immediately.
 ### Simple Job
 Jobs are queued using special Torque/Moab cluster user’s tools ([detailed documentation available online](https://support.adaptivecomputing.com/wp-content/uploads/2021/02/torque/torque.htm#topics/torque/2-jobs/submittingManagingJobs.htm)).
@@ -142,7 +142,7 @@ Queue is selected with the `qsub –q <queue name>` parameter. If the queue is n
 
 ---
 
-## Monitoring queues, nodes, and jobs
+## Monitoring jobs and available resources
 Command to check the status of submitted jobs:
 ```
 qstat
@@ -212,7 +212,7 @@ Local resource usage on a computing node:
 
 ---
 
-## Best practices for the jobs with intensive input/output (I/O)
+## Jobs with intensive Input/Output
 `/home/<username>` or `/home_beegfs/<username>` the user’s work directory and files are located on network attached disk array. Benefits: the directory is shared between all nodes, therefore it is easy to use it. Disadvantages: insufficient speed for many parallel I/O operations (working with a large number of small files, analysis of sequencing data, etc.).
 
 `/scratch` Fast local SSD disk on a computing node.
@@ -249,7 +249,7 @@ Multiple I/O-intensive user jobs or parallel processes on the same computing nod
 
 ---
 
-## Transition between Commands Torque/Pbs Pro and Slurm
+## Transition between Torque and Slurm Commands
 Cheat sheet for those who have previously used the SLURM task management system (source: [https://openhpc.community/](https://openhpc.community)).
 ![large scratch](images/torque_slurm.png){width=1000px scale=80 align=center}
 
