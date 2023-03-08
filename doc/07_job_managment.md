@@ -26,7 +26,7 @@ qsub -I
 ```
 Automatically a remote terminal on a computing node will be opened where a user can execute the needed commands by writing them in the command line. The command is similar to `ssh <hostname>`, with the difference that resources are reserved and there will not be any conflicts with other users.
 
-If it is necessary to open a graphical window in an interactive regime, add -X parameter.
+If it is necessary to open a graphical window in an interactive regime, add `-X` parameter.
 ```
 qsub -X -I
 ```
@@ -39,11 +39,11 @@ qsub –N my_job –q fast –l walltime=00:00:30 test.sh
 You can add requirements at the beginning of the job script:
 ```
 #!/bin/bash
-#PBS -N my_job 			        ### Job name
-#PBS -l walltime=00:00:30 	### Expected job maximum duration
-#PBS -l nodes=1:ppn=1 		  ### Computing resources needed
-#PBS -q fast 			          ### Queue
-#PBS -j oe 		  ### Combine standard output and error in the same file
+#PBS -N my_job  # Job name
+#PBS -l walltime=00:00:30  # Expected job maximum duration
+#PBS -l nodes=1:ppn=1  # Computing resources needed
+#PBS -q fast  # Queue
+#PBS -j oe  # Combine standard output and error in the same file
 ```
 The requirements can be entered in either the command line or the script, but highest priority is given to the requirements in the command line in case they repeat.
 
@@ -148,6 +148,7 @@ Command to check the status of submitted jobs:
 qstat
 ```
 `R` – running, `C` – completed, `Q` - queued
+
 To see all running jobs queued or running in cluster (for all users):
 ```
 showq
@@ -202,9 +203,11 @@ Local resource usage on a computing node:
     `htop`, `dstat`, `nvidia-smi`, `iostat`, `nfsstat`
     
     For example, the efficiency of CPU usage with command `htop`
+    
     ![htop](images/htop.png){scale=100 align=center}
     
     Track the GPU usage efficiency with command `nvidia-smi`
+    
     ![nvidie-smi](images/nvidie-smi.png){scale=100 align=center}    
 
 ---
@@ -231,7 +234,7 @@ cp –r $SCRATCH/output_data $HOME/
 rm -rf $SCRATCH
 ```
 
-Not all nodes are equipped with local SSD disks (SCRATCH), therefore please specify an appropriate feature parameter when you submit a job, for example, if a larger SCRATCH disk is required: 
+Not all nodes are equipped with local SSD disks, therefore please specify an appropriate feature parameter when you submit a job, for example, if a larger scratch disk is required: 
 ```
 #PBS -l feature=largescratch
 ```
@@ -247,7 +250,7 @@ Multiple I/O-intensive user jobs or parallel processes on the same computing nod
 ---
 
 ## Transition between Commands Torque/Pbs Pro and Slurm
-Cheat sheet for those who have previously used the SLURM task management system (source: (https://openhpc.community/)[https://openhpc.community]).
-![large scratch](images/torque_slurm.png){scale=80 align=center}
+Cheat sheet for those who have previously used the SLURM task management system (source: [https://openhpc.community/](https://openhpc.community)).
+![large scratch](images/torque_slurm.png){width=100px scale=80 align=center}
 
 ---
