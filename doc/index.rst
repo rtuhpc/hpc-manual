@@ -7,6 +7,8 @@
 HPC User Manual 
 ===============
 
+This guide outlines how to use the High-performance Computing cluster RUDENS.
+
 .. toctree::
    :maxdepth: 2
 
