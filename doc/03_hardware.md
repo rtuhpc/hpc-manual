@@ -7,7 +7,7 @@ Users connect to a separate login node which provides a work environment and too
 
 ![alt text](./images/data_center.jpg)
 
-General System parameters:
+## General System parameters
 - 35 computing nodes
 - 1344 CPU cores
 - 12 TB RAM (up to 2 TB per process)
