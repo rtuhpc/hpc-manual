@@ -20,4 +20,4 @@ In the <b>scheduler options</b> tab enter a custom job submission command. For e
 ```
 ![ansys_submit_job_settings](images/ansys_submit_job_sched.PNG)
 
-Now just click submit job and everything should be running! 
+Now just click <b>submit job</b> and everything should be running! 
