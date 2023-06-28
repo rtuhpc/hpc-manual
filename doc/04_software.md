@@ -70,7 +70,7 @@ This section gives a summary of the scientific software installed on the HPC clu
 ### Other
 - Agisoft PhotoScan 
 - Blender (ver. 2.7)
-- Git (ver. 1.8.3.1. 2.41.0
+- Git (ver. 1.8.3.1. 2.41.0)
 - Hashcat
 - R (ver. 3.4.0, 3.5.3, 3.6.3,4.1.0)
 ### Programming tools and compilers
