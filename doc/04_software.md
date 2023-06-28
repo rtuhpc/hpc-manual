@@ -70,6 +70,7 @@ This section gives a summary of the scientific software installed on the HPC clu
 ### Other
 - Agisoft PhotoScan 
 - Blender (ver. 2.7)
+- Git (ver. 1.8.3.1. 2.41.0
 - Hashcat
 - R (ver. 3.4.0, 3.5.3, 3.6.3,4.1.0)
 ### Programming tools and compilers
@@ -78,7 +79,7 @@ This section gives a summary of the scientific software installed on the HPC clu
 - GNU Compiler Collection (ver. 4.8.5, 5.4.0,7.3.0, 8.3.0)
 - Intel Parallel Studio (ver. 2015)/ IntelMPI (ver. 4.0.3)
 - Jaer 1.8.1
-- OpenMPI (ver. 1.10.7, 3.1.1)
+- OpenMPI (ver. 1.10.7, 3.1.1, 4.0.5, 4.1.1)
 - Mamba (1.4.4)
 - Perl (ver. 5)
 - Python (ver. 2.7, 3.6)
