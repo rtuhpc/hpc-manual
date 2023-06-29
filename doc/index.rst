@@ -23,4 +23,5 @@ This guide outlines how to use the High-performance Computing cluster RUDENS.
    09_containers.md
    10_accounting.md
    11_online_resources.md
-   hfss.md
+   appendix.md
+
