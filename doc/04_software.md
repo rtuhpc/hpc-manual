@@ -68,8 +68,8 @@ This section gives a summary of the scientific software installed on the HPC clu
 - Vep (ver. 101, 104.3, 108.2 
 - Vsearch (ver. 2.15.0)  
 ### Other
+- Agisoft PhotoScan
 - Apptainer (ver. 1.1.6)
-- Agisoft PhotoScan 
 - Blender (ver. 2.7)
 - Git (ver. 1.8.3.1. 2.41.0)
 - Hashcat
