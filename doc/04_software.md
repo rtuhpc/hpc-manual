@@ -3,7 +3,7 @@ This section gives a summary of the scientific software installed on the HPC clu
 ### Engeneering
 - ANSYS (2019-R1)
 - Comsol Multiphysics (ver. 5.3a)
-- FreeFEM (ver.4.10)
+- FreeFEM (ver. 4.10)
 - Gmsh (ver. 4.11)
 - MathWorks MATLAB (ver. R2018b)
 - Network-simulator NS-2 (ver. 2.34)
