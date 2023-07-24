@@ -3,6 +3,8 @@ This section gives a summary of the scientific software installed on the HPC clu
 ### Engeneering
 - ANSYS (2019-R1)
 - Comsol Multiphysics (ver. 5.3a)
+- FreeFEM (ver.4.10)
+- Gmsh (ver. 4.11)
 - MathWorks MATLAB (ver. R2018b)
 - Network-simulator NS-2 (ver. 2.34)
 - OpenFoam (ver. 2.4, 5.0)
@@ -24,7 +26,7 @@ This section gives a summary of the scientific software installed on the HPC clu
 - Plumed (ver. 2.5.0, 2.7.2)  
 - Pycharm(ver. 2020.2.3)  
 - Pymol (ver.  2.3.0, 2.5.0)                                    
-- Schrodinger (ver.2018-4, 2022-4, 2022-1)  
+- Schrodinger (ver.2018-4, 2022-1, 2022-4, 2023-2)  
 - VMD (ver.1.9.3 )   
 ### Bioinformatics/Genomics 
 - Bcftools (ver. 1.10.2) 
