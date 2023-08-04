@@ -95,4 +95,4 @@ Computing nodes are equipped with local SDD disks with capacity up to 3.5 TB
 | wn43, wn56-wn58 | compute-gpu | 128 GB | E5-2680 v3 | 24 | 2 | /scratch | dell rudens gpu k40 centos7 |
 | wn59-wn60 | compute-gpu | 192 GB | Gold 6130 | 32 | 4 | /scratch | vasara vasara-32 gpu v100 centos7 |
 | wn61 | compute, high-mem | 2 TB | Epyc 7F72 | 48 | 0 | /scratch, 1.8 TB | epyc7f72 largescratch |
-| wn62-wn64 | compute | 512 GB | Epyc 7713 | 128 | 0 | /scratch, 3.5 TB | epyc epyc7713 centos7 |
+| wn62-wn64 | compute | 2 TB | Epyc 7713 | 128 | 0 | /scratch, 3.5 TB | epyc epyc7713 centos7 |
