@@ -53,14 +53,23 @@ Instructions will be added.
 
 ![x2go window](images/x2go.png)
 
-The client (your desktop) computer needs the [X2GO-client. ](https://wiki.x2go.org/doku.php/doc:installation:start)
+The client (your desktop) computer needs the [X2Go-client. ](https://wiki.x2go.org/doku.php/doc:installation:start)
 Setup on Windows and Linux is simple, just download and install the program. Many Linux distributions have an X2Go package in their package manager (apt, yum, etc.) so check that before downloading it from the website. If there is a package, it’ll be called **x2goclient**.
 - #### Configuring the client:
-During first use X2GO-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner "Session" tab.
-The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key.
+During first use X2Go-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner **"Session"** tab.
+The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key. Use **XFCE** as session type.
 
-![x2go window](images/X2go_session_01.PNG)
+<!-- 
+![Configuration](images/X2go_session_01.PNG) 
+-->
 
+<p align="center">
+<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_02.PNG"  width=40% height=40%>
+</p>
+
+<!-- 
+<img align="right" src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%>
+-->
 
 ## User workspace
 Each user has prepared workspace, where to store files related to the jobs. By logging into the system using command-line, the user is automatically directed to the work directory: `/home/username` or `/home_beegfs/username`.  
