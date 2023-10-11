@@ -56,13 +56,14 @@ Instructions will be added.
 The client (your desktop) computer needs the [X2Go-client. ](https://wiki.x2go.org/doku.php/doc:installation:start)
 Setup on Windows and Linux is simple, just download and install the program. Many Linux distributions have an X2Go package in their package manager (apt, yum, etc.) so check that before downloading it from the website. If there is a package, it’ll be called **x2goclient**.
 - #### Configuring the client:
-During first use X2Go-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner **"Session"** tab.
+   During first use X2Go-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner **"Session"** tab.
 The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key. Use **XFCE** as session type.
+It is also recommended to configure the display settings, for example, as done in the example below or in some other way depending on display type. You can resize the window during the session. Changing the **DPI** of the remote desktop  at runtime is impossible.
 
 <!-- 
 ![Configuration](images/X2go_session_01.PNG) 
 -->
-
+</p>
 <p align="center">
 <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_02.PNG"  width=40% height=40%>
 </p>
