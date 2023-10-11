@@ -47,24 +47,20 @@ matlab &
 ```
 A program window will be opened on your computer, but all operations will run remotely on the cluster. The MATLAB interface provides the necessary tools for queuing and executing a task on computing nodes.
 
+
 ### X2Go remote desktop
 Instructions will be added.
 
 ![x2go window](images/x2go.png)
 
-The client (your desktop) computer needs the [X2GO-client](https://wiki.x2go.org/doku.php/doc:installation:start)
-Setup on Windows and Linux is simple, just download and install the program. Many Linux distributions have an X2Go package in their package manager (apt, yum, etc.) so check that before downloading it from the website. If there is a package, it’ll be called x2goclient.
-
-<br>
-
-## Configuring the client:
-
----
-
+The client (your desktop) computer needs the [X2GO-client. ](https://wiki.x2go.org/doku.php/doc:installation:start)
+Setup on Windows and Linux is simple, just download and install the program. Many Linux distributions have an X2Go package in their package manager (apt, yum, etc.) so check that before downloading it from the website. If there is a package, it’ll be called **x2goclient**.
+- #### Configuring the client:
 During first use X2GO-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner "Session" tab.
 The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key.
-<br>
----
+
+![Configuration](X2go_session_01.PNG)
+
 
 ## User workspace
 Each user has prepared workspace, where to store files related to the jobs. By logging into the system using command-line, the user is automatically directed to the work directory: `/home/username` or `/home_beegfs/username`.  
