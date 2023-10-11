@@ -67,10 +67,15 @@ It is also recommended to configure the display settings, for example, as done i
 <p align="center">
 <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_02.PNG"  width=40% height=40%>
 </p>
-
 <!-- 
 <img align="right" src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%>
 -->
+If your low bandwidth limits your experience, you can adjust image quality and resolution in the **"Connection"** tab in order to enhance the experience.
+Please also disable sound and printing support at **"Media"** tab.
+</p>
+<p align="center">
+<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_02.PNG"  width=40% height=40%>
+</p>
 
 ## User workspace
 Each user has prepared workspace, where to store files related to the jobs. By logging into the system using command-line, the user is automatically directed to the work directory: `/home/username` or `/home_beegfs/username`.  
