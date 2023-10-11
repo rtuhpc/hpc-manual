@@ -59,7 +59,7 @@ Setup on Windows and Linux is simple, just download and install the program. Man
 During first use X2GO-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner "Session" tab.
 The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key.
 
-![Configuration](images/X2go_session_01.PNG)
+![x2go window](images/X2go_session_01.PNG)
 
 
 ## User workspace
