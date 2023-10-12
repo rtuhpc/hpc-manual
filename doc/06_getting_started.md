@@ -67,13 +67,13 @@ It is also recommended to configure the display settings, for example, as done i
 If your low bandwidth limits your experience, you can adjust image quality and resolution in the **"Connection"** tab in order to enhance the experience.
 Please also disable sound and printing support at **"Media"** tab.
 
-<!--
-<p align="center">
-<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_connection.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_media.PNG"  width=40% height=40%>
-</p>
--->
 
-![x2go window](images/X2go_connection.PNG)
+
+<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_connection.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_media.PNG"  width=40% height=40%>
+
+
+
+<!-- ![x2go window](images/X2go_connection.PNG) -->
 
 ![x2go window](images/X2go_media.PNG)
 
