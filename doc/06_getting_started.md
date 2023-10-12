@@ -77,7 +77,7 @@ Please also disable sound and printing support at **"Media"** tab.
 
 ![x2go window](images/X2go_media.PNG)
 
- It is possible to share files between the HPC and your computer at home. To use this feature, you need to create a folder (lile  X2Go-Share) on your computer at home. If you are connected to the HPC X2Go, disconnect before chaninging the settings. Open the Session preferences under **Session > Session management** and select the Shared folders tab.
+ It is possible to share files between the HPC and your computer at home. To use this feature, you need to create a folder (lile  X2Go-Share) on your computer at home. If you are connected to the HPC X2Go, disconnect before chaninging the settings. Open the Session preferences under **Session > Session management > Session preferences** and select the **Shared folders** tab.
 
 Add the folder that you created on your home computer by pressing the symbol next to the Add button where you need to select the folder. Click on **Add** after you selected the folder and make a tick at **Automount**. 
 
