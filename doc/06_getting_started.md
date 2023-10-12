@@ -68,12 +68,12 @@ If your low bandwidth limits your experience, you can adjust image quality and r
 Please also disable sound and printing support at **"Media"** tab.
 
 
-
+<!--
 <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_connection.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_media.PNG"  width=40% height=40%>
+-->
 
 
-
-<!-- ![x2go window](images/X2go_connection.PNG) -->
+![x2go window](images/X2go_connection.PNG)
 
 ![x2go window](images/X2go_media.PNG)
 
