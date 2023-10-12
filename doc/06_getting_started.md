@@ -67,6 +67,7 @@ It is also recommended to configure the display settings, for example, as done i
 <p align="center">
 <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_session_02.PNG"  width=40% height=40%>
 
+
 <!-- 
 <img align="right" src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%>
 -->
