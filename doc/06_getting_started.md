@@ -60,23 +60,22 @@ Setup on Windows and Linux is simple, just download and install the program. Man
 The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key. Use **XFCE** as session type.
 It is also recommended to configure the display settings, for example, as done in the example below or in some other way depending on display type. You can resize the window during the session. Changing the **DPI** of the remote desktop  at runtime is impossible.
 
-<!-- 
-![Configuration](images/X2go_session_01.PNG) 
--->
-</p>
-<p align="center">
-<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_session_01.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_session_02.PNG"  width=40% height=40%>
+![x2go window](images/X2go_session_01.PNG)
 
+![x2go window](images/X2go_session_02.PNG)
 
-<!-- 
-<img align="right" src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_session_01.PNG" width=40% height=40%>
--->
 If your low bandwidth limits your experience, you can adjust image quality and resolution in the **"Connection"** tab in order to enhance the experience.
 Please also disable sound and printing support at **"Media"** tab.
 
+<!--
 <p align="center">
 <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_connection.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/_images/X2go_media.PNG"  width=40% height=40%>
 </p>
+-->
+
+![x2go window](images/X2go_connection.PNG)
+
+![x2go window](images/X2go_media.PNG)
 
 ## User workspace
 Each user has prepared workspace, where to store files related to the jobs. By logging into the system using command-line, the user is automatically directed to the work directory: `/home/username` or `/home_beegfs/username`.  
