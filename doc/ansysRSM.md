@@ -14,7 +14,7 @@ You should see the following screen. Press the button to add a new cluster(marke
 Now enter a name for the new cluster on the right side under the HPC configuration header. For the HPC type choose "**custom**". In the submit host enter "**ui-2.hpc.rtu.lv**". In the custom HPC type enter "**TORQUE**". Check the "**Use HPC protocol...**" checkbox and select "**Able to directly submit and monitor HPC jobs**". Lastly click **Apply** at the bottom.
 ![ansys_simulate_select](images/ansysRSM/settings1.png)
 
-In the second settings screen set everything as shown in the following image, but change the part "**yourUserAccount**" to your actual HPC account username
+In the second settings screen set everything as shown in the following image, but change the part "**yourUserAccount**" to your actual HPC account username. Click **Apply**.
 ![ansys_simulate_select](images/ansysRSM/settings2.png)
 
 First double click on the credentials tab on the left side then click the button on the right panel to create new credentials. 
@@ -30,6 +30,6 @@ Go back to the cluster setup by double clicking on the cluster name
 
 ![ansys_simulate_select](images/ansysRSM/goback.png)
 
-Select the queues tab(1.). Then press the button(2.) to load the queues from the cluster. Check the queues that you will need to use in the **Enabled** column. Finally, test if the queues work by clicking the submit button(3.) and if everything is setup correctly you should see a green checkmark next to the submit button.
+Select the queues tab(1.). Then press the button(2.) to load the queues from the cluster. Check the queues that you will need to use in the **Enabled** column. Finally, test if the queues work by clicking the submit button(3.) and if everything is setup correctly you should see a green checkmark next to the submit button. Click **Apply**.
 
 ![ansys_simulate_select](images/ansysRSM/settings3.png)
