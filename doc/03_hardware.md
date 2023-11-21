@@ -29,7 +29,7 @@ Users connect to a separate login node which provides a work environment and too
 - ui-2.hpc.rtu.lv (primary): 2 x AMD EPYC 7502P (Rome) @ 2.5GHz (kopā 64 kodoli), RAM 256 GB DDR4, 3.5 TB NVMe RAID 0, 100 Gb/s Ethernet access network, 100 Gbiti/s Infiniband EDR
 - ui-1.hpc.rtu.lv: 2 x Intel Xeon CPU E5-2680 v3 @ 2.50GHz (total 24 cores), 128 GB RAM, 10 Gb/s Ethernet access network, 56 Gb/s InfiniBand FDR 
 ### CPU computing nodes
-- 3 nodes Dell EMC PowerEdge R6525, (wn62-wn64, feature=epyc): 2 x AMD Epyc 7713 (Milan) @ 2 GHz (total 128 cores per node), RAM 512 GB DDR4, 3.5 TB NVMe RAID 0, 100 Gbiti/s Infiniband EDR
+- 3 nodes Dell EMC PowerEdge R6525, (wn62-wn64, feature=epyc): 2 x AMD Epyc 7713 (Milan) @ 2 GHz (total 128 cores per node), RAM 2 TB DDR4, 3.5 TB NVMe RAID 0, 100 Gbiti/s Infiniband EDR
 - 10 nodes Dell EMC PowerEdge R640 (wn02-wn10, feature=vasara): 2 x Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz (total 36 cores per node), RAM 384 GB DDR4 2666 MHz ECC, 1TB SSD, Infiniband EDR 100 Gb/s
 - 11 nodes Dell PowerEdge R630 (wn45-wn55, feature=rudens): 2 x Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz (total 24 cores per node), RAM: 128 GB DDR4 2133MHz ECC, 200 GB SSD, Infiniband FDR 56 Gb/s
 ### GPU computing nodes
@@ -95,4 +95,4 @@ Computing nodes are equipped with local SDD disks with capacity up to 3.5 TB
 | wn43, wn56-wn58 | compute-gpu | 128 GB | E5-2680 v3 | 24 | 2 | /scratch | dell rudens gpu k40 centos7 |
 | wn59-wn60 | compute-gpu | 192 GB | Gold 6130 | 32 | 4 | /scratch | vasara vasara-32 gpu v100 centos7 |
 | wn61 | compute, high-mem | 2 TB | Epyc 7F72 | 48 | 0 | /scratch, 1.8 TB | epyc7f72 largescratch |
-| wn62-wn64 | compute | 512 GB | Epyc 7713 | 128 | 0 | /scratch, 3.5 TB | epyc epyc7713 centos7 |
+| wn62-wn64 | compute | 2 TB | Epyc 7713 | 128 | 0 | /scratch, 3.5 TB | epyc epyc7713 centos7 |

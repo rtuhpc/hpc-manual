@@ -47,12 +47,39 @@ matlab &
 ```
 A program window will be opened on your computer, but all operations will run remotely on the cluster. The MATLAB interface provides the necessary tools for queuing and executing a task on computing nodes.
 
+
 ### X2Go remote desktop
 Instructions will be added.
 
 ![x2go window](images/x2go.png)
 
----
+The client (your desktop) computer needs the [X2Go-client. ](https://wiki.x2go.org/doku.php/doc:installation:start)
+Setup on Windows and Linux is simple, just download and install the program. Many Linux distributions have an X2Go package in their package manager (apt, yum, etc.) so check that before downloading it from the website. If there is a package, it’ll be called **x2goclient**.
+- #### Configuring the client:
+   During first use X2Go-client needed to be configured as it is shown at the picture. To configure, select in the upper left corner **"Session"** tab.
+The setting of the ssh-key is only necessary, if you use a non-standard name or not the default key. Use **XFCE** as session type.
+It is also recommended to configure the display settings, for example, as done in the example below or in some other way depending on display type. You can resize the window during the session. Changing the **DPI** of the remote desktop  at runtime is impossible.
+
+![x2go window](images/X2go_session_01.PNG)
+
+![x2go window](images/X2go_session_02.PNG)
+
+If your low bandwidth limits your experience, you can adjust image quality and resolution in the **"Connection"** tab in order to enhance the experience.
+Please also disable sound and printing support at **"Media"** tab.
+
+
+<!--
+<img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_connection.PNG" width=40% height=40%> &nbsp;&nbsp;&nbsp;&nbsp;  <img src="https://github.com/rtuhpc/hpc-manual/blob/main/doc/images/X2go_media.PNG"  width=40% height=40%>
+-->
+
+
+![x2go window](images/X2go_connection.PNG)
+
+![x2go window](images/X2go_media.PNG)
+
+ It is possible to share files between the HPC and your computer at home. To use this feature, you need to create a folder (lile  X2Go-Share) on your computer at home. If you are connected to the HPC X2Go, disconnect before chaninging the settings. Open the Session preferences under **Session > Session management > Session preferences** and select the **Shared folders** tab.
+
+Add the folder that you created on your home computer by pressing the symbol next to the **Add** button where you need to select the folder. Click on **Add** after you selected the folder and make a tick at **Automount**. 
 
 ## User workspace
 Each user has prepared workspace, where to store files related to the jobs. By logging into the system using command-line, the user is automatically directed to the work directory: `/home/username` or `/home_beegfs/username`.  

@@ -8,6 +8,7 @@ qsub -l nodes=1:ppn=1:gpus=1:shared
 Additionally, it is possible to specify compute mode for a GPU: 
 - `shared`: GPU available for multiple processes 
 - `exclusive_process`: only one compute process is allowed to run on the GPU
+
 To request specific GPU model additionally specify the feature parameter: `-l feature=v100`
 
 GPUs available on the cluster “Rudens”:
