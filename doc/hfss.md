@@ -1,4 +1,4 @@
-# Using ansysHFFS on the cluster
+# Using ansysED on the cluster
 
 ## Connecting to the desktop environment
 To launch ansys hfss you need to use x2go or a similar x11 forwarding program. Connect to the login node using the XFCE desktop environment setting in x2go.
