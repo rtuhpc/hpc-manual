@@ -1,5 +1,5 @@
 # ansys RSM setup
-## For ansys Electronics Desktop see the section "Using ansysHFFS on the cluster"
+### For ansys Electronics Desktop see the other section "Using ansysHFFS on the cluster" in the guide
 
 ## Prerequisites
 Ansys RSM must be installed on your personal computer.
