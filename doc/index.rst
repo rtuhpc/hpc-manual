@@ -24,5 +24,4 @@ This guide outlines how to use the High-performance Computing cluster RUDENS.
    10_accounting.md
    11_online_resources.md
    appendix.md
-   ansysRSM.md
 
