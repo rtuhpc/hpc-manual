@@ -1,27 +1,35 @@
-# ansys RSM setup(for ED see below)
+# ansys RSM setup
+## For ansys Electronics Desktop see the section "Using ansysHFFS on the cluster"
 
 ## Prerequisites
 Ansys RSM must be installed on your personal computer.
 You need to be connected to the RTU network - either directly or indirectly through a VPN
 
-## Connecting to the desktop environment
-To launch ansys hfss you need to use x2go or a similar x11 forwarding program. Connect to the login node using the XFCE desktop environment setting in x2go.
+## Setting up RSM
+Open ansysRSM on your machine. 
 
-## Launching a job from ansysHFSS
-When you have opened ansysHFSS click the submit button in the <b>simulation</b> tab 
+You should see the following screen. Press the button to add a new cluster(marked with a red arrow).
+![ansys_simulate_select](images/ansysRSM/initial.png)
 
-![ansys_simulate_select](images/ansys_simulate_select.PNG)
+Now enter a name for the new cluster on the right side under the HPC configuration header. For the HPC type choose "**custom**". In the submit host enter "**ui-2.hpc.rtu.lv**". In the custom HPC type enter "**TORQUE**". Check the "**Use HPC protocol...**" checkbox and select "**Able to directly submit and monitor HPC jobs**". Lastly click **Apply** at the bottom.
+![ansys_simulate_select](images/ansysRSM/settings1.png)
 
-Next setup the simulation parameters as shown in the image and select the directory of the project that you want to simulate:
-![ansys_submit_job_settings](images/ansys_submit_job_settings.PNG)
+In the second settings screen set everything as shown in the following image, but change the part "**yourUserAccount**" to your actual HPC account username
+![ansys_simulate_select](images/ansysRSM/settings2.png)
 
-In the <b>compute resources</b> tab select the ammount of cores, ram and the number of variations to distribute:
-![ansys_submit_job_settings](images/ansys_submit_job_compute.PNG)
+First double click on the credentials tab on the left side then click the button on the right panel to create new credentials. 
+![ansys_simulate_select](images/ansysRSM/creds1.png)
 
-In the <b>scheduler options</b> tab enter a custom job submission command. For example:
-```
--l procs=180,pmem=2gb -q 'batch@rudens.hpc.rtu.lv' -N hfss -d /home_beegfs/<b>your user name</b>/ -l walltime=5:00:00 -j oe
-```
-![ansys_submit_job_settings](images/ansys_submit_job_sched.PNG)
+In the promt that appears enter your HPC username and the password that you use to login to the HPC cluster
+![ansys_simulate_select](images/ansysRSM/creds2.png)
 
-Now just click <b>submit job</b> and everything should be running! 
+Select the cluster that you just created and any others where you wish to use this account.
+![ansys_simulate_select](images/ansysRSM/creds3.png)
+
+Go back to the cluster setup by double clicking on the cluster name
+
+![ansys_simulate_select](images/ansysRSM/goback.png)
+
+Select the queues tab(1.). Then press the button(2.) to load the queues from the cluster. Check the queues that you will need to use in the **Enabled** column. Finally, test if the queues work by clicking the submit button(3.) and if everything is setup correctly you should see a green checkmark next to the submit button.
+
+![ansys_simulate_select](images/ansysRSM/settings3.png)
