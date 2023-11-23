@@ -1,6 +1,6 @@
 # Appendix
 
-## AnsysHFSS
+## Using AnsysHFSS on the HPC cluster
 
 ```{include} ./includes/hfss.md
 ```
