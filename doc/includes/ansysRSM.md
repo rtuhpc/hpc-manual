@@ -1,11 +1,10 @@
-# ansys RSM setup
-### For ansys Electronics Desktop see the other section "Using ansysHFFS on the cluster" in the guide
+**For ansys Electronics Desktop see the other section "Using ansysHFFS on the cluster" in the guide**
 
-## Prerequisites
+### Prerequisites
 Ansys RSM must be installed on your personal computer.
 You need to be connected to the RTU network - either directly or indirectly through a VPN
 
-## Setting up RSM
+### Setting up RSM
 Open ansysRSM on your machine. 
 
 You should see the following screen. Press the button to add a new cluster(marked with a red arrow).
