@@ -1,9 +1,7 @@
-# Using ansysHFFS on the cluster
-
-## Connecting to the desktop environment
+### Connecting to the desktop environment
 To launch ansys hfss you need to use x2go or a similar x11 forwarding program. Connect to the login node using the XFCE desktop environment setting in x2go.
 
-## Launching a job from ansysHFSS
+### Launching a job from ansysHFSS
 When you have opened ansysHFSS click the submit button in the <b>simulation</b> tab 
 
 ![ansys_simulate_select](images/ansys_simulate_select.PNG)
