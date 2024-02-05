@@ -1,12 +1,4 @@
 # HPC hardware specifications
-RTU HPC cluster “Rudens” consists of 34 computing nodes for job execution and one head node which performs cluster management function. All nodes are inter-connected with fast InfiniBand network. Each compute node is equipped with two x86_64 architecture processors (CPUs), and some of the nodes additionally with 2 or 4 Nvidia Tesla graphical accelerators (GPU). Cluster architecture is heterogeneous, combining nodes of different generations and technical parameters.
-
-Several network-attached storage systems are available for storing user data with a total capacity of 1.6 PB. For tasks with intensive I/O, a special NVMe disk array with BeeGFS parallel file system is available.
-
-Users connect to a separate login node which provides a work environment and tools for running jobs in the cluster. Job management is provided by Torque/Moab tools.
-
-![alt text](./images/data_center.jpg)
-
 ## General System parameters
 - 34 computing nodes
 - 1922 CPU cores
@@ -17,7 +9,15 @@ Users connect to a separate login node which provides a work environment and too
 - 10-100 Gb/s access network
 - 56-200 Gb/s InfiniBand interconnection
 
----
+RTU HPC cluster “Rudens” consists of 34 computing nodes for job execution and one head node which performs cluster management function. All nodes are inter-connected with fast InfiniBand network. Each compute node is equipped with two x86_64 architecture processors (CPUs), and some of the nodes additionally with 2 or 4 Nvidia Tesla graphical accelerators (GPU). Cluster architecture is heterogeneous, combining nodes of different generations and technical parameters.
+
+Several network-attached storage systems are available for storing user data with a total capacity of 1.6 PB. For tasks with intensive I/O, a special NVMe disk array with BeeGFS parallel file system is available.
+
+Users connect to a separate login node which provides a work environment and tools for running jobs in the cluster. Job management is provided by Torque/Moab tools.
+
+![alt text](./images/data_center.jpg)
+
+
 
 ## Access Network
 10 Gbps connection with Latvian Academic computer network, 100 Gbps to European Academic Computer Network GEANT and Genomics Data Network, and 2 Gbps to commercial Internet providers in Latvia is provided.
