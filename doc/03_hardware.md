@@ -1,5 +1,5 @@
 # HPC hardware specifications
-RTU HPC cluster “Rudens” consists of 35 computing nodes for job execution and one head node which performs cluster management function. All nodes are inter-connected with fast InfiniBand network. Each compute node is equipped with two x86_64 architecture processors (CPUs), and some of the nodes additionally with 2 or 4 Nvidia Tesla graphical accelerators (GPU). Cluster architecture is heterogeneous, combining nodes of different generations and technical parameters.
+RTU HPC cluster “Rudens” consists of 34 computing nodes for job execution and one head node which performs cluster management function. All nodes are inter-connected with fast InfiniBand network. Each compute node is equipped with two x86_64 architecture processors (CPUs), and some of the nodes additionally with 2 or 4 Nvidia Tesla graphical accelerators (GPU). Cluster architecture is heterogeneous, combining nodes of different generations and technical parameters.
 
 Several network-attached storage systems are available for storing user data with a total capacity of 1.6 PB. For tasks with intensive I/O, a special NVMe disk array with BeeGFS parallel file system is available.
 
@@ -8,14 +8,14 @@ Users connect to a separate login node which provides a work environment and too
 ![alt text](./images/data_center.jpg)
 
 ## General System parameters
-- 35 computing nodes
-- 1344 CPU cores
-- 12 TB RAM (up to 2 TB per process)
+- 34 computing nodes
+- 1922 CPU cores
+- 17 TB RAM (up to 2 TB per process)
 - 20 Graphical Nvidia Tesla processors (GPU)
-- 181 TFlops overall performance (75 Tflops x86 + 106 Tflops GPU)
+- 210 TFlops overall performance (104 Tflops x86 + 106 Tflops GPU)
 - 1.6 PB data storage
 - 10-100 Gb/s access network
-- 56-100 Gb/s InfiniBand interconnection
+- 56-200 Gb/s InfiniBand interconnection
 
 ---
 
@@ -29,6 +29,7 @@ Users connect to a separate login node which provides a work environment and too
 - ui-2.hpc.rtu.lv (primary): 2 x AMD EPYC 7502P (Rome) @ 2.5GHz (kopā 64 kodoli), RAM 256 GB DDR4, 3.5 TB NVMe RAID 0, 100 Gb/s Ethernet access network, 100 Gbiti/s Infiniband EDR
 - ui-1.hpc.rtu.lv: 2 x Intel Xeon CPU E5-2680 v3 @ 2.50GHz (total 24 cores), 128 GB RAM, 10 Gb/s Ethernet access network, 56 Gb/s InfiniBand FDR 
 ### CPU computing nodes
+- 4 nodes SuperMicro AS-1125HS (wn67-wn70,feature=epyc): 2 x 4th gen AMD Epyc 9654 (Genoa) @ 2.4 GHz (total 196 cores per node), RAM 1.5 TB DDR5, 7 TB NVMe RAID 0, 200 Gbps Infiniband HDR
 - 3 nodes Dell EMC PowerEdge R6525, (wn62-wn64, feature=epyc): 2 x AMD Epyc 7713 (Milan) @ 2 GHz (total 128 cores per node), RAM 2 TB DDR4, 3.5 TB NVMe RAID 0, 100 Gbiti/s Infiniband EDR
 - 10 nodes Dell EMC PowerEdge R640 (wn02-wn10, feature=vasara): 2 x Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz (total 36 cores per node), RAM 384 GB DDR4 2666 MHz ECC, 1TB SSD, Infiniband EDR 100 Gb/s
 - 11 nodes Dell PowerEdge R630 (wn45-wn55, feature=rudens): 2 x Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz (total 24 cores per node), RAM: 128 GB DDR4 2133MHz ECC, 200 GB SSD, Infiniband FDR 56 Gb/s
@@ -96,3 +97,5 @@ Computing nodes are equipped with local SDD disks with capacity up to 3.5 TB
 | wn59-wn60 | compute-gpu | 192 GB | Gold 6130 | 32 | 4 | /scratch | vasara vasara-32 gpu v100 centos7 |
 | wn61 | compute, high-mem | 2 TB | Epyc 7F72 | 48 | 0 | /scratch, 1.8 TB | epyc7f72 largescratch |
 | wn62-wn64 | compute | 2 TB | Epyc 7713 | 128 | 0 | /scratch, 3.5 TB | epyc epyc7713 centos7 |
+| wn67-wn70 | compute | 1.5 TB | Epyc 9654 | 192 | 0 | /scratch, 7 TB | epyc epyc7713 centos7 |
+
