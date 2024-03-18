@@ -1,7 +1,8 @@
 # Software Installed on the Cluster
 This section gives a summary of the scientific software installed on the HPC cluster.
 ### Engeneering
-- ANSYS (2019-R1)
+- ANSYS (2023-R2)
+- ANSYS Electronics Desktop(2023 [includes ansys HFSS])
 - Comsol Multiphysics (ver. 5.3a)
 - FreeFEM (ver. 4.10)
 - Gmsh (ver. 4.11)
