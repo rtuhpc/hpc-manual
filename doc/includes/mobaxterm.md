@@ -56,7 +56,7 @@ Note that the **private key will be stored in Putty format** (`.ppk` extension i
 - Click `Conversions` and select `Export OpenSSH key`.
 Give the file the same name as your `.ppk` private key file above (just without the `.ppk`).
 
-![MobaXterm_converting_key](../images/mobaxterm_keygen_04.png)
+![MobaXterm_converting_key](images/mobaxterm_keygen_04.png)
 
 
 You should end up with three files:
