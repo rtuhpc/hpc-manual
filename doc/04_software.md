@@ -81,14 +81,16 @@ This section gives a summary of the scientific software installed on the HPC clu
 ### Programming tools and compilers
 - Conda/Anaconda (ver. 4.7.5, 4.7.10, 4.13.0, 23.1.0)
 - CUDA Toolkit (ver. 8.0, 9.2, 10.1, 11.4), cuDNN
-- GNU Compiler Collection (ver. 4.8.5, 5.4.0,7.3.0, 8.3.0)
+- GNU Compiler Collection (ver. 4.8.5, 5.4.0,7.3.0, 8.3.0, 11.2)
 - Intel Parallel Studio (ver. 2015)/ IntelMPI (ver. 4.0.3)
 - Jaer 1.8.1
+- OpenACC (3.1)
+- OpenCL (3.0)
+- OpenCV (4.5)
 - OpenMPI (ver. 1.10.7, 3.1.1, 4.0.5, 4.1.1)
 - Mamba (1.4.4)
 - Perl (ver. 5)
 - Python (ver. 2.7, 3.6)
-
 
 
 On request, additional software or other versions may be installed. Centos, EPEL, and OpenHPC repositories are used on the cluster. Tools available through the OpenHPC repository can be found in the following list: [OpenHPC](https://github.com/openhpc/ohpc/wiki/Component-List-v1.3.8).  
