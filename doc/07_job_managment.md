@@ -58,7 +58,7 @@ How to request specific computing resources?  Define the requirements with qsub 
 - necessary amount of memory (for a job): `-l nodes=1:ppn=12,mem=12g`
 - require computing nodes with particular features. The features are usually used on clusters with non-homogeneous nodes. For example, to guarantee the job exaction on the latest generation nodes (with 36 CPU cores per node): `-l feature=vasara`
 - select one feature from a list: `-l feature='feature1|feature2'`
-- exclude specific feature (l40s) `-W 'x=NODESET:ONEOF:FEATURE:!l40s'`
+- exclude specific feature (l40s):  `-W 'x=NODESET:ONEOF:FEATURE:!l40s'` or `-l feature='!l40s'`
    
   ![node features](images/node_features.png){scale=80 align=center}
 
