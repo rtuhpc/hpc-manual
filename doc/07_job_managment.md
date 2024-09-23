@@ -52,11 +52,14 @@ How to request specific computing resources?  Define the requirements with qsub 
 - number of nodes and cores (use this notation for MPI jobs): `-l nodes=2:ppn=12`
 - particular node (may result in more queue time):`-l nodes=wn62:ppn=64` or `-l nodes=wn02:ppn=18+wn03:ppn=18`
 - use nodes only from the list: `-W x=HOSTLIST:wn02,wn03,wn04,wn05,wn06,wn07,wn08,wn09,wn10,wn11`
+- exclude specific nodes (wn64) from list `-W 'x=HOSTLIST:wn[01-76],^wn64'`
 - number of GPUs: `-l nodes=1:ppn=12:gpus=2`
 - necessary amount of memory (per CPU core): `-l nodes=1:ppn=12,pmem=1g`
 - necessary amount of memory (for a job): `-l nodes=1:ppn=12,mem=12g`
-- Require computing nodes with particular features. The features are usually used on clusters with non-homogeneous nodes. For example, to guarantee the job exaction on the latest generation nodes (with 36 CPU cores per node): `-l feature=vasara`
-
+- require computing nodes with particular features. The features are usually used on clusters with non-homogeneous nodes. For example, to guarantee the job exaction on the latest generation nodes (with 36 CPU cores per node): `-l feature=vasara`
+- select one feature from a list: `-l feature='feature1|feature2'`
+- exclude specific feature (l40s) `-W 'x=NODESET:ONEOF:FEATURE:!l40s'`
+   
   ![node features](images/node_features.png){scale=80 align=center}
 
 For full list of node names and features, please refer to the section HPC hardware specifications.
