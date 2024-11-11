@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appendix &mdash; RTU HPC 2.6 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=0f2af99e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Useful online resources" href="11_online_resources.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RTU HPC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_getting_access.html">Getting access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_general_gudelines.html">General guidelines for using HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_hardware.html">HPC hardware specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_software.html">Software Installed on the Cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_user_interfaces.html">User Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_getting_started.html">Getting started with the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_job_managment.html">Job Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_gpu_cuda.html">Using GPUs and CUDA on the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_containers.html">Running containers in the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_accounting.html">Usage Accounting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_online_resources.html">Useful online resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-ansyshfss-on-the-hpc-cluster">Using AnsysHFSS on the HPC cluster</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connecting-to-the-desktop-environment">Connecting to the desktop environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#launching-a-job-from-ansyshfss">Launching a job from ansysHFSS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ansys-remote-solver-manager-rsm">Ansys Remote Solver Manager (RSM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-keys-for-ansys-on-the-cluster">Adding keys for ansys on the cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-rsm">Setting up RSM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#access-to-hpc-cluster-using-mobaxterm">Access to HPC cluster using MobaXterm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generating-keys-on-windows-using-mobaxterm">Generating Keys on Windows using MobaXterm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#converting-putty-ppk-key-into-the-openssh-format">Converting Putty (.ppk) key into the OpenSSH format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#import-key-in-windows-mobaxterm">Import key in Windows MobaXterm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RTU HPC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Appendix</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/appendix.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="appendix">
+<h1>Appendix<a class="headerlink" href="#appendix" title="Link to this heading"></a></h1>
+<section id="using-ansyshfss-on-the-hpc-cluster">
+<h2>Using AnsysHFSS on the HPC cluster<a class="headerlink" href="#using-ansyshfss-on-the-hpc-cluster" title="Link to this heading"></a></h2>
+<section id="connecting-to-the-desktop-environment">
+<h3>Connecting to the desktop environment<a class="headerlink" href="#connecting-to-the-desktop-environment" title="Link to this heading"></a></h3>
+<p>To launch ansys hfss you need to use x2go or a similar x11 forwarding program. Connect to the login node using the XFCE desktop environment setting in x2go.</p>
+</section>
+<section id="launching-a-job-from-ansyshfss">
+<h3>Launching a job from ansysHFSS<a class="headerlink" href="#launching-a-job-from-ansyshfss" title="Link to this heading"></a></h3>
+<p>When you have opened ansysHFSS click the submit button in the <b>simulation</b> tab</p>
+<p><img alt="ansys_simulate_select" src="_images/ansys_simulate_select.PNG" /></p>
+<p>Next setup the simulation parameters as shown in the image and select the directory of the project that you want to simulate:
+<img alt="ansys_submit_job_settings" src="_images/ansys_submit_job_settings.PNG" /></p>
+<p>In the <b>compute resources</b> tab select the ammount of cores, ram and the number of variations to distribute:
+<img alt="ansys_submit_job_settings" src="_images/ansys_submit_job_compute.PNG" /></p>
+<p>In the <b>scheduler options</b> tab enter a custom job submission command. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">l</span> <span class="n">procs</span><span class="o">=</span><span class="mi">180</span><span class="p">,</span><span class="n">pmem</span><span class="o">=</span><span class="mi">2</span><span class="n">gb</span> <span class="o">-</span><span class="n">q</span> <span class="s1">&#39;batch@rudens.hpc.rtu.lv&#39;</span> <span class="o">-</span><span class="n">N</span> <span class="n">hfss</span> <span class="o">-</span><span class="n">d</span> <span class="o">/</span><span class="n">home_beegfs</span><span class="o">/&lt;</span><span class="n">b</span><span class="o">&gt;</span><span class="n">your</span> <span class="n">user</span> <span class="n">name</span><span class="o">&lt;/</span><span class="n">b</span><span class="o">&gt;/</span> <span class="o">-</span><span class="n">l</span> <span class="n">walltime</span><span class="o">=</span><span class="mi">5</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span> <span class="o">-</span><span class="n">j</span> <span class="n">oe</span>
+</pre></div>
+</div>
+<p><img alt="ansys_submit_job_settings" src="_images/ansys_submit_job_sched.PNG" /></p>
+<p>Now just click <b>submit job</b> and everything should be running!</p>
+</section>
+</section>
+<section id="ansys-remote-solver-manager-rsm">
+<h2>Ansys Remote Solver Manager (RSM)<a class="headerlink" href="#ansys-remote-solver-manager-rsm" title="Link to this heading"></a></h2>
+<p><strong>For ansys Electronics Desktop see the other section “Using ansysHFFS on the cluster” in the guide</strong></p>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h3>
+<p>Ansys RSM must be installed on your personal computer.
+You need to be connected to the RTU network - either directly or indirectly through a VPN.
+You also need to add the key as decribed in the next section and then go throug the “Setting up RSM” section.</p>
+</section>
+<section id="adding-keys-for-ansys-on-the-cluster">
+<h3>Adding keys for ansys on the cluster<a class="headerlink" href="#adding-keys-for-ansys-on-the-cluster" title="Link to this heading"></a></h3>
+<p>Step 1: Download and install PuTTY.
+Download and install PuTTY from the following location:
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+If this link is invalid, perform a web search for “PuTTY”.</p>
+<p>Step 2: Create a cryptographic key.
+Create a cryptographic key using PuTTYGen (puttygen.exe) as follows:</p>
+<ol class="arabic simple">
+<li><p>On the PuTTY Key Generator dialog box, click Generate.</p></li>
+<li><p>Change the Key comment to include your machine name and Windows username.</p></li>
+<li><p>Do not enter a key passphrase.</p></li>
+<li><p>Save the private key file without a passphrase.
+For example, <drive>:\Program Files\Putty\id_rsa.ppk.
+If you use a passphrase, jobs will hang a prompt for you to enter the passphrase. Be sure to secure the private key
+file using some other means. For example, if only you will be using the key, save it to a location where only you
+and administrators have access to the file, such as the My Documents folder. If multiple users share the same key,
+allow the owner full control, then create a group and give only users in that group access to this file.</p></li>
+<li><p>If your Linux cluster uses OpenSSH, convert the key to OpenSSH format by selecting Conversions &gt; Export Open
+SSH key in the PuTTY Key Generator dialog box.</p></li>
+<li><p>Move the public portion of the key to the Linux machine. This requires you to edit the
+~/.ssh/authorized_keys file on the Linux machine as follows:
+a. Type: nano ~/.ssh/authorized_keys
+b. Copy all the text from the box under Public key for pasting and paste it into ~/.ssh/authorized_keys.
+All of this text should be one line. If some keys exist, add a new line.
+c. Ctrl + x and then press y</p></li>
+</ol>
+<p>Step 3: Modify system environment variables.</p>
+<ol class="arabic simple">
+<li><p>Open the Windows System Properties dialog box.</p></li>
+<li><p>On the Advanced tab, select Environment Variables. The Environment Variables dialog box appears.</p></li>
+<li><p>In the Environment Variables dialog box, locate the Path variable in the System variables pane.</p></li>
+<li><p>Select the Path variable and then click the Edit button. The Edit System Variable dialog box appears.</p></li>
+<li><p>Add the PuTTY install directory to the Variable value field (for example, C:\Program Files\putty) and
+then click OK.</p></li>
+<li><p>In the System variables pane, click the New button. The New System Variable dialog box appears.</p></li>
+<li><p>In the New System Variable dialog, create a new environment variable named KEYPATH with a value containing
+the full path to the private key file (for example, <drive>:\Program Files\Putty\id_rsa.ppk).</p></li>
+</ol>
+<p>Use a user variable if the key file is used only by you. Use a system variable if other users are sharing the key file.
+For example, if a Windows 7 user has a key file in My Documents, the variable value should be</p>
+<p>Settings&lt;user&gt;\My Documents\id_rsa.ppk).
+8. Click OK.
+9. Reboot the computer for environment changes to take effect.</p>
+<p>Step 4: Perform an initial test of the configuration.</p>
+<ol class="arabic simple">
+<li><p>Run the following from the command prompt (quotes around %KEYPATH% are required):
+plink -i “%KEYPATH%” unixlogin&#64;unixmachinename pwd</p></li>
+<li><p>When prompted by plink:
+If plink prompts you to store the key in cache, select Yes.
+If plink prompts you to trust the key, select Yes.</p></li>
+</ol>
+</section>
+<section id="setting-up-rsm">
+<h3>Setting up RSM<a class="headerlink" href="#setting-up-rsm" title="Link to this heading"></a></h3>
+<p>Open ansysRSM on your machine.</p>
+<p>You should see the following screen. Press the button to add a new cluster(marked with a red arrow).
+<img alt="ansys_simulate_select" src="_images/initial.png" /></p>
+<p>Now enter a name for the new cluster on the right side under the HPC configuration header. For the HPC type choose “<strong>custom</strong>”. In the submit host enter “<strong>ui-2.hpc.rtu.lv</strong>”. In the custom HPC type enter “<strong>TORQUE</strong>”. Check the “<strong>Use HPC protocol…</strong>” checkbox and select “<strong>Able to directly submit and monitor HPC jobs</strong>”. Lastly click <strong>Apply</strong> at the bottom.
+<img alt="ansys_simulate_select" src="_images/settings1.png" /></p>
+<p>In the second settings screen set everything as shown in the following image, but change the part “<strong>yourUserAccount</strong>” to your actual HPC account username. Click <strong>Apply</strong>.
+<img alt="ansys_simulate_select" src="_images/settings2.png" /></p>
+<p>First double click on the credentials tab on the left side then click the button on the right panel to create new credentials.
+<img alt="ansys_simulate_select" src="_images/creds1.png" /></p>
+<p>In the promt that appears enter your HPC username and the password that you use to login to the HPC cluster
+<img alt="ansys_simulate_select" src="_images/creds2.png" /></p>
+<p>Select the cluster that you just created and any others where you wish to use this account.
+<img alt="ansys_simulate_select" src="_images/creds3.png" /></p>
+<p>Go back to the cluster setup by double clicking on the cluster name</p>
+<p><img alt="ansys_simulate_select" src="_images/goback.png" /></p>
+<p>Select the queues tab(1.). Then press the button(2.) to load the queues from the cluster. Check the queues that you will need to use in the <strong>Enabled</strong> column. Finally, test if the queues work by clicking the submit button(3.) and if everything is setup correctly you should see a green checkmark next to the submit button. Click <strong>Apply</strong>.</p>
+<p><img alt="ansys_simulate_select" src="_images/settings3.png" /></p>
+</section>
+</section>
+<section id="access-to-hpc-cluster-using-mobaxterm">
+<h2>Access to HPC cluster using MobaXterm<a class="headerlink" href="#access-to-hpc-cluster-using-mobaxterm" title="Link to this heading"></a></h2>
+<p>MobaXterm is a freeware that offers <strong>enhanced terminal for Windows with X11 server, SSH clients and other network tools</strong>. The personal home edition of MobaXterm can be downloaded from <a class="reference external" href="http://mobaxterm.mobatek.net/download-home-edition.html">http://mobaxterm.mobatek.net/download-home-edition.html</a>. The free personal edition supports <strong>12 sessions</strong>, which is sufficient for our use.</p>
+<ul class="simple">
+<li><p>Install and launch MobaXterm. When Windos Firewall prompted allow <code class="docutils literal notranslate"><span class="pre">xwin_mobax</span></code> only through private networks, and untick access via Public networks. Do not access these services from open networks.</p></li>
+</ul>
+<p><img alt="MobaXterm_through_firewall" src="_images/mobaxterm_firewall.png" /></p>
+<ul class="simple">
+<li><p>In a case of using portable version you need to setup right working directories: Settings =&gt; Configuration =&gt; General</p></li>
+<li><p>For Persistent root directory use MobaXterm install directory</p></li>
+</ul>
+<p><img alt="MobaXterm_portable" src="_images/mobaxterm_portable.png" /></p>
+<ul class="simple">
+<li><p>To create an <code class="docutils literal notranslate"><span class="pre">SSH</span></code> session, select <code class="docutils literal notranslate"><span class="pre">Session</span></code> and choose <code class="docutils literal notranslate"><span class="pre">SSH</span></code> in the <code class="docutils literal notranslate"><span class="pre">Session</span> <span class="pre">settings</span></code>.</p></li>
+<li><p>Set remote host as <code class="docutils literal notranslate"><span class="pre">ui-2.hpc.rtu.lv</span></code>, tick <code class="docutils literal notranslate"><span class="pre">Specify</span> <span class="pre">user_name</span></code> and type your user_name in the box provided. Leave the port to be <code class="docutils literal notranslate"><span class="pre">22</span></code>. Be sure that you mark <code class="docutils literal notranslate"><span class="pre">Compression</span></code> box in <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">SSH</span> <span class="pre">settings</span></code>. This is quite important for slow connections. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+<p><img alt="MobaXterm_ssh_setup" src="_images/mobaxterm_ssh.png" /></p>
+<ul class="simple">
+<li><p>You should now be able to see <code class="docutils literal notranslate"><span class="pre">ui-2.hpc.rtu.lv(user_name)</span></code> in the Sessions tab. Select this session. This should prompt you for your password. This is your RTU HPC password.</p></li>
+<li><p>Make setting for X-Server (Settings =&gt; Configuration =&gt; X-server) like in a picture:</p></li>
+</ul>
+<p><img alt="MobaXterm_X11" src="_images/mobaxterm_X11.png" /></p>
+<ul class="simple">
+<li><p>Connect with SSH : Sessions =&gt; User Sessions =&gt; your’s session name</p></li>
+</ul>
+</section>
+<section id="generating-keys-on-windows-using-mobaxterm">
+<h2>Generating Keys on Windows using MobaXterm<a class="headerlink" href="#generating-keys-on-windows-using-mobaxterm" title="Link to this heading"></a></h2>
+<p>There are multiple ways to generate SSH key pairs on a Windows system, and we present here  instructions for generation and use SSH keys on MobaXterm as our preferred tool for its user friendliness. The MobaXterm application includes a tool to help you generate SSH key pairs. Before starting, you should login to RTU HPC with MobaXterm using your account username and password. Once you are logged in:</p>
+<ul class="simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Tools</span></code> and <code class="docutils literal notranslate"><span class="pre">MobaKeyGen</span> <span class="pre">(SSH</span> <span class="pre">key</span> <span class="pre">generator)</span></code></p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_01" src="_images/mobaxterm_keygen_01.png" /></p>
+<p>In the section <strong>Parameters</strong> make sure to set the following properties:</p>
+<ul class="simple">
+<li><p><strong>Type of key to generate:</strong> <code class="docutils literal notranslate"><span class="pre">RSA</span></code> (this is the <code class="docutils literal notranslate"><span class="pre">SSH-2</span></code> protocol)</p></li>
+<li><p><strong>Number of bits in a generated key:</strong> <code class="docutils literal notranslate"><span class="pre">4096</span></code></p></li>
+<li><p>Hit the <code class="docutils literal notranslate"><span class="pre">Generate</span></code> button.</p></li>
+<li><p>During generation, move the mouse cursor around in the blank area.</p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_02" src="_images/mobaxterm_keygen_02.png" /></p>
+<ul class="simple">
+<li><p>When finished, <strong>make sure to protect your generated key with a passphrase.</strong> This passphrase is used for encrypting you private key to protect it against the private key file theft or being lost.
+When using the key for login, you will have to enter it (or the first time you load it into the SSH key agent).
+Note that when being asked for the <strong>passphrase</strong> this does not occur on the cluster but on your local computer.</p></li>
+<li><p><em>Save the private and public key.</em> The default name under Linux for the <strong>public key</strong> is <code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code> and <code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> for the <strong>private key</strong>, but you can name them however you want (the <code class="docutils literal notranslate"><span class="pre">.pub</span></code> is NOT automatically added).
+Note that the <strong>private key will be stored in Putty format</strong> (<code class="docutils literal notranslate"><span class="pre">.ppk</span></code> extension is added automatically).</p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_03" src="_images/mobaxterm_keygen_03.png" /></p>
+<section id="converting-putty-ppk-key-into-the-openssh-format">
+<h3>Converting Putty (.ppk) key into the OpenSSH format<a class="headerlink" href="#converting-putty-ppk-key-into-the-openssh-format" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Conversions</span></code> and select <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">OpenSSH</span> <span class="pre">key</span></code>.
+Give the file the same name as your <code class="docutils literal notranslate"><span class="pre">.ppk</span></code> private key file above (just without the <code class="docutils literal notranslate"><span class="pre">.ppk</span></code>).</p></li>
+</ul>
+<p><img alt="MobaXterm_converting_key" src="_images/mobaxterm_keygen_04.png" /></p>
+<p>You should end up with three files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code>  This file yoy can paste into <code class="docutils literal notranslate"><span class="pre">~.ssh/authorized_keys</span></code> file on yours HPC account</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa.ppk</span></code> This is your <strong>private key</strong> in <strong>Putty</strong> format</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> This your <strong>private key</strong> in <strong>OpenSSH</strong> format.</p></li>
+</ul>
+</section>
+<section id="import-key-in-windows-mobaxterm">
+<h3>Import key in Windows MobaXterm<a class="headerlink" href="#import-key-in-windows-mobaxterm" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Settings</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">SSH</span></code> tab</p></li>
+<li><p>Be sure to activate the 4 options :</p>
+<ul>
+<li><p>SSH keepalive</p></li>
+<li><p>Use Internal SSH Agent</p></li>
+<li><p>Use External Pageant</p></li>
+<li><p>Forward Agent</p></li>
+</ul>
+</li>
+<li><p>Click on the <strong>+</strong> sign to import your private key (test_key.ppk in example ). It’s also possible to import a key generated on linux or MacOS.</p></li>
+</ul>
+<p><img alt="MobaXterm_import_key" src="_images/mobaxterm_ssh_02.png" /></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="11_online_resources.html" class="btn btn-neutral float-left" title="Useful online resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, RTU HPC center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

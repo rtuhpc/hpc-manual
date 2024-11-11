@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generating Keys on Windows using MobaXterm &mdash; RTU HPC 2.6 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=0f2af99e"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RTU HPC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../01_getting_access.html">Getting access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_general_gudelines.html">General guidelines for using HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_hardware.html">HPC hardware specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_software.html">Software Installed on the Cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_user_interfaces.html">User Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_getting_started.html">Getting started with the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_job_managment.html">Job Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_gpu_cuda.html">Using GPUs and CUDA on the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_containers.html">Running containers in the cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_accounting.html">Usage Accounting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_online_resources.html">Useful online resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RTU HPC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Generating Keys on Windows using MobaXterm</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/includes/mobaxterm.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>MobaXterm is a freeware that offers <strong>enhanced terminal for Windows with X11 server, SSH clients and other network tools</strong>. The personal home edition of MobaXterm can be downloaded from <a class="reference external" href="http://mobaxterm.mobatek.net/download-home-edition.html">http://mobaxterm.mobatek.net/download-home-edition.html</a>. The free personal edition supports <strong>12 sessions</strong>, which is sufficient for our use.</p>
+<ul class="simple">
+<li><p>Install and launch MobaXterm. When Windos Firewall prompted allow <code class="docutils literal notranslate"><span class="pre">xwin_mobax</span></code> only through private networks, and untick access via Public networks. Do not access these services from open networks.</p></li>
+</ul>
+<p><img alt="MobaXterm_through_firewall" src="includes/images/mobaxterm_firewall.png" /></p>
+<ul class="simple">
+<li><p>In a case of using portable version you need to setup right working directories: Settings =&gt; Configuration =&gt; General</p></li>
+<li><p>For Persistent root directory use MobaXterm install directory</p></li>
+</ul>
+<p><img alt="MobaXterm_portable" src="includes/images/mobaxterm_portable.png" /></p>
+<ul class="simple">
+<li><p>To create an <code class="docutils literal notranslate"><span class="pre">SSH</span></code> session, select <code class="docutils literal notranslate"><span class="pre">Session</span></code> and choose <code class="docutils literal notranslate"><span class="pre">SSH</span></code> in the <code class="docutils literal notranslate"><span class="pre">Session</span> <span class="pre">settings</span></code>.</p></li>
+<li><p>Set remote host as <code class="docutils literal notranslate"><span class="pre">ui-2.hpc.rtu.lv</span></code>, tick <code class="docutils literal notranslate"><span class="pre">Specify</span> <span class="pre">user_name</span></code> and type your user_name in the box provided. Leave the port to be <code class="docutils literal notranslate"><span class="pre">22</span></code>. Be sure that you mark <code class="docutils literal notranslate"><span class="pre">Compression</span></code> box in <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">SSH</span> <span class="pre">settings</span></code>. This is quite important for slow connections. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+<p><img alt="MobaXterm_ssh_setup" src="includes/images/mobaxterm_ssh.png" /></p>
+<ul class="simple">
+<li><p>You should now be able to see <code class="docutils literal notranslate"><span class="pre">ui-2.hpc.rtu.lv(user_name)</span></code> in the Sessions tab. Select this session. This should prompt you for your password. This is your RTU HPC password.</p></li>
+<li><p>Make setting for X-Server (Settings =&gt; Configuration =&gt; X-server) like in a picture:</p></li>
+</ul>
+<p><img alt="MobaXterm_X11" src="includes/images/mobaxterm_X11.png" /></p>
+<ul class="simple">
+<li><p>Connect with SSH : Sessions =&gt; User Sessions =&gt; your’s session name</p></li>
+</ul>
+<section id="generating-keys-on-windows-using-mobaxterm">
+<h1>Generating Keys on Windows using MobaXterm<a class="headerlink" href="#generating-keys-on-windows-using-mobaxterm" title="Link to this heading"></a></h1>
+<p>There are multiple ways to generate SSH key pairs on a Windows system, and we present here  instructions for generation and use SSH keys on MobaXterm as our preferred tool for its user friendliness. The MobaXterm application includes a tool to help you generate SSH key pairs. Before starting, you should login to RTU HPC with MobaXterm using your account username and password. Once you are logged in:</p>
+<ul class="simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Tools</span></code> and <code class="docutils literal notranslate"><span class="pre">MobaKeyGen</span> <span class="pre">(SSH</span> <span class="pre">key</span> <span class="pre">generator)</span></code></p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_01" src="../_images/mobaxterm_keygen_01.png" /></p>
+<p>In the section <strong>Parameters</strong> make sure to set the following properties:</p>
+<ul class="simple">
+<li><p><strong>Type of key to generate:</strong> <code class="docutils literal notranslate"><span class="pre">RSA</span></code> (this is the <code class="docutils literal notranslate"><span class="pre">SSH-2</span></code> protocol)</p></li>
+<li><p><strong>Number of bits in a generated key:</strong> <code class="docutils literal notranslate"><span class="pre">4096</span></code></p></li>
+<li><p>Hit the <code class="docutils literal notranslate"><span class="pre">Generate</span></code> button.</p></li>
+<li><p>During generation, move the mouse cursor around in the blank area.</p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_02" src="includes/images/mobaxterm_keygen_02.png" /></p>
+<ul class="simple">
+<li><p>When finished, <strong>make sure to protect your generated key with a passphrase.</strong> This passphrase is used for encrypting you private key to protect it against the private key file theft or being lost.
+When using the key for login, you will have to enter it (or the first time you load it into the SSH key agent).
+Note that when being asked for the <strong>passphrase</strong> this does not occur on the cluster but on your local computer.</p></li>
+<li><p><em>Save the private and public key.</em> The default name under Linux for the <strong>public key</strong> is <code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code> and <code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> for the <strong>private key</strong>, but you can name them however you want (the <code class="docutils literal notranslate"><span class="pre">.pub</span></code> is NOT automatically added).
+Note that the <strong>private key will be stored in Putty format</strong> (<code class="docutils literal notranslate"><span class="pre">.ppk</span></code> extension is added automatically).</p></li>
+</ul>
+<p><img alt="MobaXterm_keygen_03" src="includes/images/mobaxterm_keygen_03.png" /></p>
+<section id="converting-putty-ppk-key-into-the-openssh-format">
+<h2>Converting Putty (.ppk) key into the OpenSSH format<a class="headerlink" href="#converting-putty-ppk-key-into-the-openssh-format" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Conversions</span></code> and select <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">OpenSSH</span> <span class="pre">key</span></code>.
+Give the file the same name as your <code class="docutils literal notranslate"><span class="pre">.ppk</span></code> private key file above (just without the <code class="docutils literal notranslate"><span class="pre">.ppk</span></code>).</p></li>
+</ul>
+<p><img alt="MobaXterm_converting_key" src="includes/images/mobaxterm_keygen_04.png" /></p>
+<p>You should end up with three files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code>  This file yoy can paste into <code class="docutils literal notranslate"><span class="pre">~.ssh/authorized_keys</span></code> file on yours HPC account</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa.ppk</span></code> This is your <strong>private key</strong> in <strong>Putty</strong> format</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> This your <strong>private key</strong> in <strong>OpenSSH</strong> format.</p></li>
+</ul>
+</section>
+<section id="import-key-in-windows-mobaxterm">
+<h2>Import key in Windows MobaXterm<a class="headerlink" href="#import-key-in-windows-mobaxterm" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Settings</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">SSH</span></code> tab</p></li>
+<li><p>Be sure to activate the 4 options :</p>
+<ul>
+<li><p>SSH keepalive</p></li>
+<li><p>Use Internal SSH Agent</p></li>
+<li><p>Use External Pageant</p></li>
+<li><p>Forward Agent</p></li>
+</ul>
+</li>
+<li><p>Click on the <strong>+</strong> sign to import your private key (test_key.ppk in example ). It’s also possible to import a key generated on linux or MacOS.</p></li>
+</ul>
+<p><img alt="MobaXterm_import_key" src="includes/images/mobaxterm_ssh_02.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, RTU HPC center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
