@@ -88,7 +88,7 @@ Directory is shared between all cluster nodes using networked file system (NFS o
 
 The users can install/compile software in their workspace if the installation process does not require administrator (root) permissions.  
 ### Copy files to the cluster
-To copy files from your computer to the cluster login node, MS Windows users can use tools as WinScp or FAR file manager. WinScp can be downloaded here: [https://winscp.net/eng/download.php](https://winscp.net/eng/download.php). Connection is similar to that of PuTTY:  
+To copy files from your computer to the cluster login node, MS Windows users can use WinScp that can be downloaded here: [https://winscp.net/eng/download.php](https://winscp.net/eng/download.php). Connection is similar to that of PuTTY:  
 ![winscp](images/winscp_conf.png)
 
 On the left, you’ll see your computer files, and the right – work directory on the cluster. You can drag and drop files with a computer mouse from one window to another:  
