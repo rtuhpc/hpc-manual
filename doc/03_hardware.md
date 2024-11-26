@@ -29,12 +29,12 @@ Users connect to a separate login node which provides a work environment and too
 - ui-2.hpc.rtu.lv (primary): 2 x AMD EPYC 7502P (Rome) @ 2.5GHz (kopā 64 kodoli), RAM 256 GB DDR4, 3.5 TB NVMe RAID 0, 100 Gb/s Ethernet access network, 100 Gbiti/s Infiniband EDR
 - ui-1.hpc.rtu.lv: 2 x Intel Xeon CPU E5-2680 v3 @ 2.50GHz (total 24 cores), 128 GB RAM, 10 Gb/s Ethernet access network, 56 Gb/s InfiniBand FDR 
 ### CPU computing nodes
-- 4 nodes SuperMicro AS-1125HS (wn67-wn70,feature=epyc): 2 x 4th gen AMD Epyc 9654 (Genoa) @ 2.4 GHz (total 196 cores per node), RAM 1.5 TB DDR5, 7 TB NVMe RAID 0, 200 Gbps Infiniband HDR
+- 4 nodes SuperMicro AS-1125HS (wn67-wn70,feature=epyc): 2 x 4th gen AMD Epyc 9654 (Genoa) @ 2.4 GHz (total 192 cores per node), RAM 1.5 TB DDR5, 7 TB NVMe RAID 0, 200 Gbps Infiniband HDR
 - 3 nodes Dell EMC PowerEdge R6525, (wn62-wn64, feature=epyc): 2 x AMD Epyc 7713 (Milan) @ 2 GHz (total 128 cores per node), RAM 2 TB DDR4, 3.5 TB NVMe RAID 0, 100 Gbiti/s Infiniband EDR
 - 10 nodes Dell EMC PowerEdge R640 (wn02-wn10, feature=vasara): 2 x Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz (total 36 cores per node), RAM 384 GB DDR4 2666 MHz ECC, 1TB SSD, Infiniband EDR 100 Gb/s
 ### GPU computing nodes
 - 2 GPU nodes Dell EMC PowerEdge (wn71-wn72, feature=gold6548,gpu,l40s):2 x Intel Xeon Gold 6548 gen.5 @ 2.5Hz (total 64 cores per node), **4 x NVIDIA L40s GPU**, 48 GB GDDR6, 1.5 TB DDR5, 7 TB NVMe RAID 0, Infiniband HDR 200 Gb/s
-- 4 GPU nodes Dell EMC PowerEdge (wn73-wn76, feature=epyc,epyc9654,gpu,l40s):2 x 4th gen AMD Epyc 9654 (Genoa) @ 2.4 GHz (total 196 cores per node), **2 x NVIDIA L40s GPU**, 48 GB GDDR6, 1.5 TB DDR5, 7 TB NVMe RAID 0, Infiniband HDR 200 Gb/s
+- 4 GPU nodes Dell EMC PowerEdge (wn73-wn76, feature=epyc,epyc9654,gpu,l40s):2 x 4th gen AMD Epyc 9654 (Genoa) @ 2.4 GHz (total 192 cores per node), **2 x NVIDIA L40s GPU**, 48 GB GDDR6, 1.5 TB DDR5, 7 TB NVMe RAID 0, Infiniband HDR 200 Gb/s
 - 1 GPU mezgls Lenovo SR670 V2 (wn44, feature=lenovo,a100):2 x Intel Xeon Gold 6348 gen.3 @ 2.6Hz (total 56 cores per node), **4 x NVIDIA A100 GPU**, 40 GB HBM2, NVLink, 512 GB DDR4 3200 MHz ECC, 5.8 TB NVMe SSD, Infiniband EDR 100 Gb/s
 - 2 GPU mezgli Dell EMC PowerEdge C4140 (wn59-wn60, feature= vasara,v100): 2 x Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz (total 32 cores per node), **4 x NVIDIA Tesla V100 GPU** per node, 16 GB HBM2, 5120 CUDA kodoli, 192 GB DDR4 2666 MHz ECC, 240 GB SSD, Infiniband EDR 100 Gb/s
 ### High memory nodes
@@ -89,7 +89,8 @@ Computing nodes are equipped with local SDD disks with capacity up to 3.5 TB
 | rudens | cluseter head | 32 GB | E5-2620 v3 |  |  |  | 
 | ui-1 | login | 64 GB | E5-2650 v3 | 20 | 0 | /scratch | 
 | ui-2 | login | 256 GB | EPYC 7502P | 64 | 0 | /scratch | 
-| wn01 | compute-smp, high-mem | 1.48 TB | Gold 6140 | 72 | 0 | /scratch | dell vasara highmem centos7 largescratch |
+| wn01 | compute-smp,  | 1.48 TB | Gold 6140 | 72 | 0 | /scratch | dell vasara highmem centos7 largescratch |
+|      | high-mem      |         |           |    |   |          |         |
 | wn02-wn11 | compute | 384 GB | Gold 6154 | 36 | 0 | /scratch | dell vasara centos7 largescratch gold6154 |
 | wn44 | compute-gpu | 512 GB | Gold 6348 | 56 | 4 | /scratch, 5.8 TB | lenovo gpu a100 |
 | wn59-wn60 | compute-gpu | 192 GB | Gold 6130 | 32 | 4 | /scratch | vasara vasara-32 gpu v100 centos7 |
