@@ -17,7 +17,7 @@ GPUs available on the cluster “Rudens”:
 | Tesla K40 |	Kepler | 3.5 | 1.3 Tflops |	N/A |	12 GB |	N/A | k40 |
 | Tesla V100 |	Volta |	7.0 |	7.5 Tflops |	112  Tflops |	16 GB | N/A |	v100 |
 | A100 | Ampere | 8.0 | 9.7 Tflops | 312 Tflops | 40 GB | Bridge 600 GB/s | a100 |
-| L40S | Ada Lovelace | 8.9 | N/A |  362 Tflops | 48 GB | N/A/ | l40s |
+| L40S | Ada Lovelace | 8.9 | N/A |  362 Tflops | 48 GB | N/A | l40s |
 
 For more details, please see the section “HPC hardware specifications”.
 
